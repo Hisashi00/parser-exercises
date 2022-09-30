@@ -8,3 +8,4 @@ expr: String;
 
 String: [0-9a-zA-Z]+;
 
+new_line = '\n'
