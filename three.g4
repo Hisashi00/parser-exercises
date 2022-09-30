@@ -9,6 +9,6 @@ xstring: ('X' STRING 'X')*
        | (STRING 'X' STRING 'X')*
        ;
 
-STRING:[A-WY-Za-z0-9]+;
+STRING:[A-WY-Za-z0-9_]+;
 new_line: '\n';
  
