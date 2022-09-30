@@ -13,7 +13,7 @@ string: STRING
 
 STRING:[0-9a-zA-Z]+;
 
-STRINGWITHSYMBOLS:(STRING SYMBOLS)+ ;
+STRINGWITHSYMBOLS:(STRING SYMBOLS)* ;
 
 SYMBOLS: ('<'| '>' |'.'| ',' |'/')+;
 new_line: '\n';
