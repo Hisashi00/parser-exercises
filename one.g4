@@ -7,7 +7,6 @@ stmt: expr;
 expr: string;
 
 string: STRINGWITHSYMBOLS
-      | STRING
       ;
 
 
