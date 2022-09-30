@@ -5,7 +5,8 @@ stmt: expr;
 
 expr: XSTRING;
 
-XSTRING: (STRING 'X' STRING 'X' )*
+XSTRING: 'X''X'
+       |(STRING 'X' STRING 'X' )*
        ;
 
 STRING:[A-WY-Za-z0-9_]+ ;
