@@ -6,14 +6,14 @@ stmt: expr;
 
 expr: string;
 
-string: STRING
-      | STRINGWITHSYMBOLS
+string: STRINGWITHSYMBOLS
+      | STRING
       ;
 
 
+
+
+STRINGWITHSYMBOLS:(STRING SYMBOLS)+ ;
 STRING:[0-9a-zA-Z]+;
-
-STRINGWITHSYMBOLS:(STRING SYMBOLS)* ;
-
 SYMBOLS: ('<'| '>' |'.'| ',' |'/')+;
 new_line: '\n';
