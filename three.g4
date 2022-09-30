@@ -5,8 +5,8 @@ stmt: expr;
 
 expr: xstring;
 
-xstring:  ('x' STRING 'x')*; 
+xstring:  ('X' STRING 'X')*; 
 
-STRING:[0-9 ^x]+;
+STRING:[0-9 ^X a-z]+;
 new_line: '\n';
  
