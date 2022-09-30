@@ -7,10 +7,10 @@ stmt: expr;
 expr: string;
 
 string: STRING; 
-symbols: ('<' '>' '.' ',' '/');
+
 
 STRING:[0-9a-zA-Z]+ 
       | symbols
       ;
-
+symbols: ('<' '>' '.' ',' '/');
 new_line: '\n';
