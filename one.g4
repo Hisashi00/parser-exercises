@@ -6,10 +6,10 @@ stmt: expr;
 
 expr: string;
 
-string: string; 
+string: STRING; 
 symbols: ('<' '>' '.' ',' '/');
 
-STRING:[0-9a-zA-Z]+ symbols [0-9a-zA-Z]+
+STRING:[0-9a-zA-Z]+ symbols 
       | STRING
       ;
 
