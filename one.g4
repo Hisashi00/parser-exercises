@@ -11,7 +11,8 @@ string: STRINGWITHSYMBOLS
       ;
 
 
-STRING:([0-9a-zA-Z]+;
+STRING:[0-9a-zA-Z]+;
+
 STRINGWITHSYMBOLS:([0-9a-zA-Z]+ SYMBOLS+)+ ;
 
 SYMBOLS: ('<'| '>' |'.'| ',' |'/');
