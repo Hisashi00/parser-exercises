@@ -10,7 +10,7 @@ string: STRING;
 
 
 STRING:[0-9a-zA-Z]+ 
-      | symbols
+      | SYMBOLS
       ;
-symbols: ('<' '>' '.' ',' '/');
+SYMBOLS: ('<' '>' '.' ',' '/');
 new_line: '\n';
