@@ -7,6 +7,6 @@ expr: xstring;
 
 xstring:  ('X' STRING 'X')*; 
 
-STRING:[^Xa-z]+;
+STRING:[^X0-9a-zA-Z]+;
 new_line: '\n';
  
