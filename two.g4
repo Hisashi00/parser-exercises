@@ -1,4 +1,4 @@
-grammar one;
+grammar two;
 prog: (stmt new_line) * ;
 
 stmt: expr;
