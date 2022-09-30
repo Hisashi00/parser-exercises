@@ -3,9 +3,9 @@ prog: (stmt new_line) * ;
 
 stmt: expr;
 
-expr: XSTRING;
+expr: xstring;
 
-XSTRING: 'X''X'
+xstring: 'X''X'
        |(STRING 'X' STRING 'X' )*
        ;
 
