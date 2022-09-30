@@ -6,8 +6,8 @@ stmt: expr;
 
 expr: string;
 
-string: STRINGWITHSYMBOLS
-      | STRING
+string: STRING
+      | STRINGWITHSYMBOLS
       ;
 
 
