@@ -8,7 +8,7 @@ expr: string;
 
 string: string; 
 STRING:[0-9a-zA-Z]+
-      |("<" ">" "." "," "/")
+      |('<' '>' '.' ',' '/')
       ;
 
 new_line: '\n';
