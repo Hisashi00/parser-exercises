@@ -9,8 +9,8 @@ expr: string;
 string: STRING; 
 symbols: ('<' '>' '.' ',' '/');
 
-STRING:[0-9a-zA-Z]+ symbols 
-      | STRING
+STRING:[0-9a-zA-Z]+ 
+      | symbols
       ;
 
 new_line: '\n';
