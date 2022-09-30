@@ -5,7 +5,8 @@ stmt: expr;
 
 expr: xstring;
 
-xstring: ('X' STRING 'X')*
+xstring: 'X''X'
+       | ('X' STRING 'X')*
        | (STRING 'X' STRING 'X')*
        ;
 
