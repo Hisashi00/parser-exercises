@@ -4,9 +4,11 @@ prog: (stmt new_line)* ;
 
 stmt: expr;
 
-expr: String;
+expr: string;
 
-String: [0-9a-zA-Z  ("<" ">" "." "," "/")]+
+string: string; 
+STRING:[0-9a-zA-Z]+
+      |("<" ">" "." "," "/")
       ;
 
 new_line: '\n';
