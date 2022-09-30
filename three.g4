@@ -1,3 +1,12 @@
-grammar one;
+grammar three;
+prog: (stmt new_line) * ;
 
-prog: '';
+stmt: expr;
+
+expr: xstring;
+
+xstring:  ('x' STRING 'x')*; 
+
+STRING:"[0-9a-zA-Z]+;
+new_line: '\n';
+ 
