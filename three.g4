@@ -6,6 +6,7 @@ stmt: expr;
 expr: xstring;
 
 xstring: 'X' 'X' 
+       |  'X' STRING'X' 
        | (STRING 'X' STRING 'X' )+
        | ( 'X' STRING 'X' STRING )+
        ;
