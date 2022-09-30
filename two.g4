@@ -1,3 +1,13 @@
 grammar one;
+prog: (stmt new_line) * ;
 
-prog: '';
+stmt: expr;
+
+expr: string;
+
+string: STRING
+      | STRING (STRING STRING); 
+
+STRING:[0-9a-zA-Z];
+new_line: '\n';
+ 
