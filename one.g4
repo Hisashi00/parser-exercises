@@ -7,12 +7,14 @@ stmt: expr;
 expr: string;
 
 string: STRINGWITHSYMBOLS
+      | STRING
       ;
 
 
 
 
-STRINGWITHSYMBOLS:(STRING SYMBOLS+)+  ;
+STRINGWITHSYMBOLS:(STRING SYMBOLS STRING)+  ;
 STRING:[0-9a-zA-Z]+;
-SYMBOLS: ('<'| '>' |'.'| ',' |'/');
+SYMBOLS: ('<'| '>' |'.'| ',' |'/')+;
 new_line: '\n';
+ 
